@@ -1,0 +1,368 @@
+/** BASE STYLES **/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container-fluid {
+  padding: 0;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.row {
+  margin: 0 auto;
+}
+
+a.col-md-3 {
+  color: white;
+  padding: 1em;
+  text-decoration: none;
+
+}
+
+  .half-width {
+  float: left;
+  width: 50%;
+}
+
+
+/** Not sure if I want to include name nav in mobile version
+a.name {
+  color: black;
+  background-color: rgb(245, 245, 245);
+  position:relative;
+}
+**/
+/** NAV BAR **/
+a.portfolio {
+  background-color: rgb(171, 152, 122);
+  position:fixed;
+  top:0;
+  z-index:2;
+}
+
+a.about {
+  background-color: black;
+  position:fixed;
+  top:3.5em;
+  z-index:4;
+}
+
+a.contact {
+  background-color: rgb(255, 83, 61);
+  position:fixed;
+  top:7em;
+  z-index:6;
+}
+
+/** NAME SECTION **/
+#name {
+  background-color: rgba(0, 0, 0, .5);
+  height: 30em;
+  padding-top: 8em;
+}
+
+h1 {
+  color: white;
+  padding-top: 2em;
+}
+
+hr {
+  border: 1px solid black;
+  width: 75%;
+}
+
+#name p {
+  color: white;
+  margin: 1em 4em;
+  text-align: center;
+}
+
+
+/** PORTFOLIO SECTION **/
+
+#portfolio {
+  background-color: #ab987a;
+  overflow: auto;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
+
+ul li {
+  margin: 0 auto;
+}
+
+ul li.pics {
+  display: block;
+  padding-top: 1em;
+  width: 60%;
+}
+
+li p {
+  color: white;
+}
+
+.grow {
+  transition: all .8s ease-in-out;
+}
+
+#elon:hover {
+  position: relative;
+  transform: scale(2.1) translate(0%, 50%);
+  z-index: 1;
+}
+
+#personal:hover {
+  position: relative;
+  transform: scale(2.1) translate(0%, 0%);
+  z-index: 1;
+}
+
+#google:hover {
+  position: relative;
+  transform: scale(2.1) translate(0%, -50%);
+  z-index: 1;
+}
+
+/** ABOUT SECTION **/
+
+#about {
+  background-color: black;
+  float: left;
+  overflow: auto;
+  position: relative;
+  width: 100%;
+  z-index: 5;
+}
+
+#about p {
+  color: white;
+  padding: 3em 1em 0 1em;
+  text-align: left;
+  width: 190%;
+}
+
+#me {
+  width: 75%;
+}
+
+.background-img img {
+  border-radius: 2em;
+  margin: 1em 2em 2em 4em;
+  min-width:15em;
+  width: 75%;
+}
+
+/** CONTACT SECTION **/
+
+#contact {
+  background-color: rgb(255, 83, 61);
+  clear: left;
+  overflow: auto;
+  position: relative;
+  width: 100%;
+  z-index: 7;
+}
+
+#contact p {
+  color: white;
+  margin-top: 2em;
+  min-width: 300px;
+  padding: 0 3em 1em 1em;
+  width: 100%;
+}
+
+/** FORM SECTION **/
+
+.form-style {
+  background: rgb(255, 83, 61);
+  margin: 2em auto 0em auto;
+  max-width: 400px;
+  min-width: 250px;
+  padding: 1em;
+}
+
+.form-style h3 {
+  background: #ab987a;
+  color: white;
+  font-size: 140%;
+  font-weight: 300;
+  margin: -1em 0 1em 0;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.form-style input[type="text"],
+.form-style input[type="email"],
+.form-style textarea,
+.form-style select {
+  border: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: #555;
+  font: 95% Arial, Helvetica, sans-serif;
+  margin-bottom: 4%;
+  outline: none;
+  padding: 3%;
+  width: 100%;
+}
+
+.form-style input[type="text"]:focus,
+.form-style input[type="email"]:focus,
+.form-style textarea:focus,
+.form-style select:focus {
+  border: 1px solid rgb(171, 152, 122);
+  box-shadow: 0 0 5px #ab987a;
+  padding: 3%;
+}
+
+.form-style input[type="submit"],
+.form-style input[type="button"] {
+  background: #ab987a;
+  border-bottom: 2px solid #ab987a;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: #fff;
+  padding: 3%;
+  width: 100%;
+}
+
+.form-style input[type="submit"]:hover,
+.form-style input[type="button"]:hover {
+  background: rgb(161, 142, 112);
+}
+
+.last-par {
+  margin-right: 1em;
+}
+
+.half-width ul li img {
+  height: 40px;
+  margin: -5em 2em 0 -1.5em;
+  width: 40px;
+}
+
+.half-width li {
+  display: inline-block;
+  padding: 2em 2em 0 0;
+  }
+
+/** MEDIA QUERY FOR DESKTOP **/
+ @media only screen and (min-width: 768px) {
+  /** BASE STYLES **/
+
+  a.col-md-3 {
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+  }
+
+   /** NAVBAR **/
+  a.name {
+    background-color: rgb(245, 245, 245);
+    color: black;
+    position:fixed;
+    left:0%;
+    top:0%;
+    z-index:2;
+  }
+
+  a.portfolio {
+    background-color: rgb(171, 152, 122);
+    position: fixed;
+    left: 25%;
+    top:0%;
+    z-index:2;
+  }
+
+  a.about {
+    background-color: black;
+    position: fixed;
+    left:50%;
+    top:0%;
+    z-index:2;
+  }
+
+  a.contact {
+    background-color: rgb(255, 83, 61);
+    position: fixed;
+    left:75%;
+    top:0%;
+    z-index:2;
+  }
+
+  /** PORTFOLIO SECTION **/
+  #portfolio {
+    background-color: #ab987a;
+    padding:8em 2em 8em 0;
+    position:relative;
+    width: 100%;
+    z-index:1;
+  }
+
+   ul li.pics {
+    display: block;
+    float: left;
+    text-decoration: none;
+  }
+
+  .grow {
+    transition: all 1s ease-in-out;
+  }
+
+  #elon:hover {
+    position: relative;
+    transform: scale(2.1) translate(35%, 10%);
+    z-index: 2;
+  }
+
+  #personal:hover {
+    position: relative;
+    transform: scale(2.1) translate(0%, 10%);
+    z-index: 2;
+  }
+
+  #google:hover {
+    position: relative;
+    transform: scale(2.1) translate(-35%, 10%);
+    z-index: 2;
+  }
+   /** ABOUT SECTION **/
+  #about {
+    background-color:black;
+    position:relative;
+    width: 100%;
+    z-index:1;
+  }
+
+  .background-img img {
+    border-radius: 2em;
+    margin: 1em 2em 2em 10em;
+    min-width:25em;
+    width: 55%;
+  }
+
+   /** CONTACT SECTION **/
+
+  #contact {
+    background-color: rgb(255, 83, 61);
+    clear: both;
+    position:relative;
+    width: 100%;
+    z-index:1;
+  }
+    #contact p {
+      color: white;
+      margin-top: 2em;
+      min-width: 300px;
+      padding: 0 1em 1em 1em;
+      width: 100%;
+  }
+}
