@@ -108,19 +108,19 @@ li p {
   transition: all .8s ease-in-out;
 }
 
-#elon:hover {
+#bamazon:hover {
   position: relative;
   transform: scale(2.1) translate(0%, 50%);
   z-index: 1;
 }
 
-#personal:hover {
+#burgerdize:hover {
   position: relative;
   transform: scale(2.1) translate(0%, 0%);
   z-index: 1;
 }
 
-#google:hover {
+#foodifai:hover {
   position: relative;
   transform: scale(2.1) translate(0%, -50%);
   z-index: 1;
@@ -317,19 +317,19 @@ li p {
     transition: all 1s ease-in-out;
   }
 
-  #elon:hover {
+  #bamazon:hover {
     position: relative;
     transform: scale(2.1) translate(35%, 10%);
     z-index: 2;
   }
 
-  #personal:hover {
+  #burgerdize:hover {
     position: relative;
     transform: scale(2.1) translate(0%, 10%);
     z-index: 2;
   }
 
-  #google:hover {
+  #foodifai:hover {
     position: relative;
     transform: scale(2.1) translate(-35%, 10%);
     z-index: 2;
