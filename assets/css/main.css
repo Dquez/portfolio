@@ -2326,7 +2326,7 @@ button:disabled,
 .panel>*.color4 {
     background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
     background-size: 128px 128px, auto;
-    background-color: #F5A65B;
+    background-color: #8BBD8B;
 }
 
 .panel>*.color1-alt {
