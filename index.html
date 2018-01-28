@@ -1,82 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<!--
+	Ethereal by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
 
 <head>
     <title>Dariell Vasquez | Portfolio</title>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" href="styles/main.css" type="text/css">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <a href="#" class="col-md-3 text-center name">Dariell Vasquez</a>
-            <a href="#portfolio" class="col-md-3 text-center portfolio" id="portfolio-desktop">Portfolio</a>
-            <a href="#about" class="col-md-3 text-center about" id="about-desktop">About</a>
-            <a href="#contact" class="col-md-3 text-center contact" id="contact-desktop">Contact</a>
-        </div>
-        <div id="name">
-            <h1 class="text-center">Dariell Vasquez</h1>
-            <hr>
-            <p>I am a passionate web developer, always looking for ways to hone my craft.
-                <br><strong>Goals?</strong> To make a better tomorrow, for all of us.</p>
-        </div>
-        <div class="row container-fluid" id="portfolio">
-            <ul>
-                <li class="col-md-4 pics">
-                    <a href="https://github.com/Dquez/bamazon" target="_blank"><img class="grow" id="bamazon" src="images/bamazon.png" alt="Bamazon thumbnail" width="100%"></a>
-                    <p>A CLI app that gives you access to multiple views, customer, manager and supervisor. Each with varying CRUD abilities.</p>
-                </li>
-                <li class="col-md-4 pics">
-                    <a href="https://burgerdize.herokuapp.com/" target="_blank"><img class="grow" id="burgerdize" src="images/burgerdize.png" alt="Burgerdize Thumbnail" width="100%"></a>
-                    <p>Gourmandize with Burgerdize, a full stack web app used to create your favorite burgers!</p>
-                </li>
-                <li class="col-md-4 pics">
-                    <a href="https://foodifai-recipes.github.io/Foodifai/" target="_blank"><img class="grow" id="foodifai" src="images/foodifai.png" alt="Foodifai app" width="100%"> </a>
-                    <p>This app takes a user's picture and uses AI to determine the ingredients to come up with a recipe for some or all of the ingredients in the picture.</p>
-            </ul>
-        </div>
-        <div class="full-width" id="about">
-            <div class="half-width">
-                <p>I'm a full stack web developer with an unbridled passion for work that both challenges and energizes me. Deeply interested in Artificial Intelligence, Machine Learning and Computer Vision. Picking up programming after graduating college rewired my brain to look at problems with a hunger to know the "why" and not just the solution. What was once a daunting monster, Javascript has found a way to the inner workings of my mind. My experience lies with the MERN stack but I'm always on the look out for bleeding edge technologies.
-                    <br>
-                    <br>When I'm not working or coding, I like to rest my eyes by hiking, long boarding or hitting the gym. When I'm feeling lazy, I like to play video games or hang out with friends.
-                </p>
-            </div>
-            <div class="half-width background-img" id="me">
-                <img src="http://res.cloudinary.com/dquez/image/upload/c_scale,q_100,w_1177/v1491692244/IMG_9944_pw6cku.jpg" alt="Picture of me">
-            </div>
-        </div>
-        <div id="contact" class="container-fluid">
-            <div class="half-width form-style">
-                <h3>Don't hesitate to contact me!</h3>
-                <form action="/submit-contact-info">
-                    <input type="text" name="field1" placeholder="Your Name" />
-                    <input type="email" name="field2" placeholder="Email Address" />
-                    <textarea name="field" placeholder="Leave a message if you'd like!" rows="3"></textarea>
-                    <input type="submit" value="Submit" />
-                </form>
-            </div>
-            <div class="half-width">
-                <p class="last-par">I'm still learning every day and am open to criticism, feedback and tips. If you'd like to simply reach out or reconnect, submit your info and I'll do my best to get back to you. If you're interested in working with me on a project or your own website, by all means, shoot me an email. Potential employment opportunities welcome. Oh, and before you go, be sure to follow my progress on Github or LinkedIn!</p>
-                <ul class="social-media">
-                    <li>
-                        <a href="https://www.linkedin.com/in/dariell-vasquez/" target="_blank">
-            <img src="http://res.cloudinary.com/dquez/image/upload/v1491713695/linkedin_cxnpyy.svg" alt="Linkedin" />
-          </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/Dquez" target="_blank">
-            <img src="http://res.cloudinary.com/dquez/image/upload/v1491713695/github_vta1rw.png" alt="Github" />
-          </a>
-                    </li>
-                </ul>
-            </div>
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+        <!-- Wrapper -->
+        <div id="wrapper">
+            <!-- Panel (Banner) -->
+            <section class="panel banner right">
+                <div class="content color0 span-3-75">
+                    <h1 class="major">Hello, my name<br />
+									is Dariell Vasquez</h1>
+                    <p>I am a passionate web developer and lifelong explorer of the unknown, always looking for ways to hone my craft.</p>
+                    <ul class="actions">
+                        <li><a href="#first" class="button special color1 circle icon fa-angle-right">Next</a></li>
+                    </ul>
+                </div>
+                <div class="image span-1-75" data-position="20% 25%">
+                    <img src="images/dv.jpg" alt="Picture of me!" />
+                </div>
+            </section>
+            <!-- Panel (Spotlight) -->
+            <section class="panel spotlight medium right" id="first">
+                <div class="content span-7">
+                    <h2 class="major">I love to code</h2>
+                    <p>I'm a creative, problem-solving, analytic full-stack web developer looking to build powerful software for mankind. My ability to anticipate difficulties and research how to solve them (<i>google</i>) has proved to be crucial in my journey as a web developer. I try my best to stay up to date with the latest technologies by reading Medium.com, documentation, and other emerging tech every day. I work well with other team members to accomplish our daily SCRUM, while also maintaining the capability of working independently and maintain focus.</p>
+                </div>
+                <div class="image filtered tinted" data-position="top left">
+                    <img src="images/laptop-mac.jpeg" alt="Laptop, Mac" />
+                </div>
+            </section>
+            <!-- Panel -->
+            <section class="panel color1">
+                <div class="intro joined">
+                    <h2 class="major">Technologies I use</h2>
+                    <p>MongoDB, Express, React, Node.js, SQL, ORMs, Unit and integration testing, JavaScript, ES6, jQuery, GIT, Firebase, HTML, CSS, Bootstrap, Media Queries, RESTful APIs, JSON, AJAX,</p>
+                </div>
+                <div class="inner">
+                    <ul class="grid-icons three connected">
+                        <li><span class="icon fa-leaf"><span class="label">MongoDB</span></span>
+                        </li>
+                        <li><span class="icon fa-trello"><span class="label">Trello</span></span>
+                        </li>
+                        <li><span class="icon fa-google"><span class="label">Google</span></span>
+                        </li>
+                        <li><span class="icon fa-github"><span class="label">Git</span></span>
+                        </li>
+                        <li><span class="icon fa-stack-overflow"><span class="label">Stack Overflow</span></span>
+                        </li>
+                        <li><span class="icon fa-code"><span class="label">React</span></span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Panel (Spotlight) -->
+            <section class="panel spotlight large left">
+                <div class="content span-5">
+                    <h2 class="major">Enjoy the process</h2>
+                    <p>It's not everyday that you get to be in a field where you get to learn something new everyday. I love the process, from exposure to a new language or technology, to the struggle, to the googling, to anguish and despair, and finally a solution...<i>an unclosed " } "</i>. It's what makes coding so rewarding.</p>
+                </div>
+                <div class="image filtered tinted" data-position="top right">
+                    <img src="images/learn.jpeg" alt="Learn" />
+                </div>
+            </section>
+            <!-- Panel -->
+            <section class="panel">
+                <div class="intro color2">
+                    <h2 class="major">Projects</h2>
+                    <p>When I'm not reading about Artificial Intelligence and Machine Learning or studying documentation, I'm working on projects to hone my skills as a developer. Take a look at some of the projects I've built!</p>
+                </div>
+                <div class="gallery">
+                    <div class="group span-3">
+                        <a href="https://toy-swap.herokuapp.com/" target="_blank" class="image filtered span-3" data-position="bottom"><img src="images/gallery/fulls/toyswap.png" alt="Toyswap app" /><p class="thumbnail-text"> Full stack web app that allows users to post and trade their toys with other users in real-time.</p></a>
+                        <a href="https://burgerdize.herokuapp.com/" class="image filtered span-1-5" data-position="center"><img src="images/gallery/fulls/burgerdize.png" alt="Burgerdize" /><p class="thumbnail-text makeDark"> CRUD with your personal burgers with this MySql, Node, Express App.</p></a>
+                        <a href="https://github.com/Dquez/bamazon" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/fulls/bamazon.png" alt="Bamazon app" /> <p class="thumbnail-text">CRUD CLI app with three different "views" customer, manager, and supervisor with different functions.</p></a>
+                    </div>
+                    <a href="https://nyt-spa-react.herokuapp.com/" target="_blank" class="image filtered span-2-5" data-position="top"><img src="images/gallery/fulls/nyt-spa.png" alt="NY Times Single Page React App" /><p class="thumbnail-text makeDark">Full-stack MERN app with CRUD methods using NY Times' API.</p></a>
+                    <div class="group span-3">
+                        <a href="https://medium-tech-scraper.herokuapp.com/" target="_blank" class="image filtered span-3" data-position="top"><img src="images/gallery/fulls/medium-scraper1.png" alt="Medium Scraper" /><p class="thumbnail-text makeDark">Medium.com tech section scraper with CRUD capabilities.</p></a>
+                        <a href="https://foodifai-recipes.github.io/Foodifai/" class="image filtered span-3" data-position="top"><img src="images/gallery/fulls/foodifai.png" alt="Foodifai" /><p class="thumbnail-text makeDark">Use AI to detect foods in a picture, then get recipes based ont he results!</p></a>
+                    </div>
+                </div>
+            </section>
+            <!-- Panel -->
+            <section class="panel color4-alt">
+                <div class="intro color4">
+                    <h2 class="major">Contact</h2>
+                    <p>If you've made it this far and would like to shoot me a message, use the form and I'll try my best to get in contact with you. Thank you for looking through my portfolio and I hope we can collaborate some time soon!</p>
+                </div>
+                <div class="inner columns divided">
+                    <div class="span-3-25">
+                    	<!-- Need to connect to server/DB -->
+                        <form method="post" action="#">
+                            <div class="field half">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" />
+                            </div>
+                            <div class="field half">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" />
+                            </div>
+                            <div class="field">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" rows="4"></textarea>
+                            </div>
+                            <ul class="actions">
+                                <li>
+                                    <input type="submit" value="Send Message" class="button special" />
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div class="span-1-2">
+                        <ul class="contact-icons color1">
+                            <li class="icon fa-github"><a href="https://github.com/Dquez/">Github</a></li>
+                            <li class="icon fa-linkedin"><a href="https://www.linkedin.com/in/dariell-vasquez/">Linkedin</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Copyright -->
+            <div class="copyright">&copy; Design template <a href="https://html5up.net">HTML5 UP</a>.</div>
         </div>
     </div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
