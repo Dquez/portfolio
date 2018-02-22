@@ -3531,30 +3531,23 @@ p.thumbnail-text {
 	font-weight: bold;
 }
 
+.tooltip {
+    padding: 0 12px;
+}
+
 
 .tooltip .tooltiptext {
     visibility: hidden;
     font-size:1.3em;
     text-align: center;
-    /*background-color: #8B9474;*/
     color: #fff;
+    line-height: 1.5em;
     border-radius: 6px;
-    padding: 5px 0;
+    padding: 5px 5px;
     position: relative;
     z-index: 1;
     opacity: 0;
     transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
 }
 
 .tooltip:hover .tooltiptext {
@@ -3564,8 +3557,9 @@ p.thumbnail-text {
 }
 
 .tooltip:hover {
+    height:100%;
     opacity:1;
-    background-color: #8B9474;    
+    background: linear-gradient(135deg, #8B9474 20%, #8BBD8B 60%, #ffe4b4);
 }
 
 
